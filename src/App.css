@@ -28,10 +28,39 @@
   color: #61dafb;
 }
 
+.App-body {
+  /* background-color: #282c34; */
+  background-color: #0a1929;
+  color: azure;
+  min-height: 100vh;
+}
+
+.App-presentation {
+  background-color: #19314b;
+  color: #fafafa;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.Main-left-container {
+  background-color: #6152a5;
+  color: #ffffff;
+
+  border-radius: 30px;
+}
+
+.Principal-Back {
+  background-color: #d0d0d0;
+  color: #252525
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -156,7 +156,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 800,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -448,7 +448,9 @@ function App() {
                   </Grid>
 
                   <Grid item xs={12}>
-                    <Button onClick={handleOpen} variant="contained">Open modal</Button>
+                    <Button onClick={handleOpen} variant="contained">SEE SECRET HOBBY</Button>
+                  </Grid>
+
                     <Modal
                       open={open}
                       onClose={handleClose}
@@ -456,15 +458,22 @@ function App() {
                       aria-describedby="modal-modal-description"
                     >
                       <Box sx={style}>
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
-                          Text in a modal
+                        <Typography id="modal-modal-title" variant="h5" component="h2">
+                          Try and seach Operating Systems
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                          Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                          So far Linux (Ubuntu, Zorin OS, Solus, Manjaro, elementary), 
+                          BDS (FreeBDS) and Windows (Windows XP, Windows Vista, Windows 8.1, Windows 10).
+                          Upcoming Windows 11!
                         </Typography>
+                        <Grid container justifyContent="center" alignItems="center" sx={{pt:1}}>
+                          <Grid item xs={10}>
+                            <img src="https://i.blogs.es/1e6d84/win11-hero/840_560.jpeg" height="400" />
+                          </Grid>
+                        </Grid>
                       </Box>
                     </Modal>
-                  </Grid>
+
                 </Grid>
 
               </Grid>
